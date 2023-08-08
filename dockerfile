@@ -3,6 +3,7 @@ RUN apt update
 RUN apt install default-jdk -y
 RUN apt install maven -y
 RUN apt install git -y
+RUN apt-get -y install curl
 RUN mkdir /usr/local/tomcat
 RUN wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.78/bin/apache-tomcat-9.0.78.tar.gz -O /tmp/tomcat.tar.gz
 RUN cd /tmp && tar xvfz tomcat.tar.gz
